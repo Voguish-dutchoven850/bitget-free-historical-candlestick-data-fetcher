@@ -10,7 +10,7 @@ PRODUCT_TYPE = "USDT-FUTURES"
 INTERVAL = "1H"
 
 # Specify your date range here in UTC (ISO8601 format for convenience)
-START_DATE = "2025-07-16T00:00:00Z"
+START_DATE = "2021-07-16T00:00:00Z"
 END_DATE = "2025-10-16T23:59:00Z"
 OUTPUT_FILENAME = f"historical_{SYMBOL}_{INTERVAL}_{START_DATE[:10]}_{END_DATE[:10]}.csv"
 
